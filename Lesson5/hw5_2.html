@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">;
+    <style>
+        body{
+            margin: 0;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .card{
+            width: 321px;
+            height: 491px;
+            border: 4px solid #554C4C;
+            background: rgba(217, 217, 217, 0.30);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 0;
+        }
+        #second-card{
+            border-color:#65856E;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: #FFF;
+            border: 4px solid #554C4C;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -50px;
+            z-index: -1;
+        }
+        #second-card>.circle{
+            border-color: #65856E;
+        }
+        h1, p{
+            font-family: Inter, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h1{
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 4px;
+            font-size: 20px;
+            text-align: center;
+            width: 257px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<div class="card" id="first-card"><div class="circle"><img src="Ds3Tool.png" alt="Ds3 Tool"></div> <h1>Lorem</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p></div>
+<div class="card" id="second-card"><div class="circle"><img src="Chessboard.png" alt="Chessboard"></div><h1>Lorem</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p></div>
+<div class="card" id="third-card"><div class="circle"><img src="Battle.png" alt="Battle"></div><h1>Lorem</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p></div>
+</div>
+</body>
+</html>
