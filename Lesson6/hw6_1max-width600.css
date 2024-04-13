@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px) {
+    nav{
+        background-color: #114f8a;
+        height: 40vh;
+    }
+    nav>a{
+        height: 10vh;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        border: 1px solid white;
+    }
+    .grid {
+        border: 1px solid white;
+        display: grid;
+        justify-content: center;
+        height: 150vh;
+        width: 100%;
+        grid-template-areas:
+"a"
+"b"
+"c"
+"d"
+"e"
+"f";
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr 2fr 2fr 2fr 10vh;
+    }
+    .grid> div, footer{
+        background-color: #114f8a;
+        color: white;
+        font-size: 20px;
+        display: grid;
+        border: 1px solid white;
+        justify-content:center;
+        align-items: center;
+        height: 100%;
+    }
+}
